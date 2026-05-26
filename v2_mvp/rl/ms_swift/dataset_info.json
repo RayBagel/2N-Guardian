@@ -1,0 +1,18 @@
+{
+  "2n-guardian-grpo": {
+    "dataset_path": "v2_mvp/rl/data/2n_rl_data_clean_v1.jsonl",
+    "columns": {
+      "prompt": "facts",
+      "response": "reasoning",
+      "label": "outcome"
+    }
+  },
+  "2n-guardian-eval": {
+    "dataset_path": "v2_mvp/rl/data/eval_set.jsonl",
+    "columns": {
+      "prompt": "facts",
+      "response": "reasoning",
+      "label": "outcome"
+    }
+  }
+}

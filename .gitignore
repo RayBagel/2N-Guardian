@@ -1,0 +1,112 @@
+# ============================================================
+# 2N-Guardian · .gitignore
+# ============================================================
+
+# --- 密钥与本地配置（必须排除）---
+.env
+.env.*
+!.env.example
+
+# --- Python 虚拟环境 ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Python 编译缓存与构建产物 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- 测试与覆盖率 ---
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# --- 编辑器与 IDE ---
+.idea/
+.vscode/
+.qoder/
+.cursor/
+.cursorrules
+*.swp
+*.swo
+*~
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- 重复或归档（保留源目录即可，不再带 zip 进仓库）---
+*.zip
+v2_mvp.zip
+
+# --- 训练产物与大型模型权重（按需保留，体积太大不入 git）---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+models/
+checkpoints/
+runs/
+wandb/
+
+# --- 日志 ---
+*.log
+logs/
+
+# --- 临时输出 ---
+tmp/
+temp/
+.tmp/
+
+# ============================================================
+# 第一版代码（旧版 / 不成熟）— 只开源 v2_mvp
+# ============================================================
+src/
+data/
+tests/
+scripts/
+configs/
+knowledge_base/
+app.py
+audit_seeds.py
+debug_data_extraction.py
+test_data_extraction.py
+test_reward_logic.py
+v2_final_cleaner.py
+v2_master_fixer.py
+CODE_WIKI.md
+PROJECT_AUDIT_REPORT.md
+PROJECT_HIGHLIGHTS.md
+ARCHITECTURE.md
+run_data_pipeline.sh

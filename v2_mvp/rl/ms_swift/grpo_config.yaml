@@ -1,0 +1,35 @@
+# GRPO config for 2N-Guardian
+# Note: keep this file as source of truth for reproducibility.
+
+rlhf_type: grpo
+
+# Base model (Qwen3.5-2B)
+model: Qwen/Qwen3.5-2B
+
+# Dataset registration key (from dataset_info.json)
+dataset: 2n-guardian-grpo
+custom_register_path: v2_mvp/rl/ms_swift/dataset_info.json
+
+# LoRA
+train_type: lora
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+# Batching
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+
+# Optimization
+learning_rate: 5.0e-7
+num_train_epochs: 1
+warmup_ratio: 0.03
+max_new_tokens: 512
+
+# Logging / checkpoints
+logging_steps: 1
+save_steps: 50
+eval_steps: 50
+
+# Outputs
+output_dir: v2_mvp/rl/output/qwen3_5_2b_grpo_lora

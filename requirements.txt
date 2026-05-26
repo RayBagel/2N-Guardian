@@ -1,0 +1,6 @@
+openai
+pydantic
+pdfplumber
+streamlit
+unsloth
+trl
