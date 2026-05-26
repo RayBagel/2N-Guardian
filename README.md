@@ -117,7 +117,7 @@
 
 **1. 克隆仓库**
 ```bash
-git clone https://github.com/YOUR_USERNAME/2N-Guardian.git
+git clone https://github.com/RayBagel/2N-Guardian.git
 cd 2N-Guardian
 ```
 
@@ -217,7 +217,7 @@ Three independent scoring dimensions — **Fact Score**, **Law Score**, **Proces
 ### 🚀 Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/2N-Guardian.git
+git clone https://github.com/RayBagel/2N-Guardian.git
 cd 2N-Guardian
 pip install -r requirements.txt
 cp .env.example .env   # Add your SiliconFlow API key
